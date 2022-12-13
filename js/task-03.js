@@ -21,10 +21,10 @@ galleryListEl.style.listStyle = 'none';
 const makeGalleryMarkup = items => {
   return items
     .map(item => {
-      const markup = `<li> <img src="${item.url}" alt="${item.alt}"  height="750" weight="1260"></li>`;
+      const markup = `<li><img src="${item.url}" alt="${item.alt}"  height="750" weight="1260"></li>`;
       return markup;
     })
-    .join();
+    .join('');
 };
 
 const elements = makeGalleryMarkup(images);

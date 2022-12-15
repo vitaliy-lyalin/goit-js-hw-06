@@ -3,15 +3,15 @@ const btnDestroyRef = document.querySelector('button[data-destroy]');
 const inputRef = document.querySelector('input');
 const boxRef = document.querySelector('#boxes');
 
-let number = 0;
+// let number = 0;
 
-inputRef.addEventListener('input', onInputValue);
-btnCreateRef.addEventListener('click', () => createBoxes(number));
+// inputRef.addEventListener('input', onInputValue);
+btnCreateRef.addEventListener('click', () => createBoxes(Number(inputRef.value)));
 btnDestroyRef.addEventListener('click', destroyBoxes);
 
-function onInputValue(event) {
-  number = Number(event.currentTarget.value);
-}
+// function onInputValue(event) {
+//   number = Number(event.currentTarget.value);
+// }
 
 function createBoxes(amount) {
   let newDiv = '';
